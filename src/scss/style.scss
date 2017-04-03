@@ -1,0 +1,11 @@
+/**
+ * Main styles for ryanshoover-2017
+ */
+
+
+// Parts
+@import "parts/post-archive";
+
+.site-main .twentyseventeen-panel:first-child .entry-header {
+	display: none;
+}

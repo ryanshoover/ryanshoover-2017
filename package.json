@@ -1,0 +1,28 @@
+{
+  "name": "ryanshoover-2017",
+  "version": "1.0.0",
+  "description": "Theme for personal site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanshoover/ryanshoover-2017.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "twentyseventeen"
+  ],
+  "author": "Ryan Hoover",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ryanshoover/ryanshoover-2017/issues"
+  },
+  "homepage": "https://github.com/ryanshoover/ryanshoover-2017#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-watch": "^4.3.11"
+  }
+}
