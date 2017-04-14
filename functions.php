@@ -45,35 +45,14 @@ add_shortcode( 'posts_grid', '\RSH\shortcode_posts_grid' );
 function posts_grid_backbone_templates( ) {
 	?>
 <script type="text/html" id="tmpl-post-preview">
-	<section class="post-preview">
-		<a href="<?php the_permalink(); ?>" class="wrap">
-			<div class="post-thumbnail">
-				<img src="{{ data.attributes._embedded['wp:featuredmedia'][0].media_details.sizes.thumbnail.source_url }}">
-			</div>
-			<div class="post-info">
-				<h3>{{ data.attributes.title.rendered }}</h3>
-			</div>
-		</a>
-	</section>
+	<a href="<?php the_permalink(); ?>" class="wrap">
+		<div class="post-thumbnail">
+			<img src="{{ data.attributes._embedded['wp:featuredmedia'][0].media_details.sizes.thumbnail.source_url }}">
+		</div>
+		<div class="post-info">
+			<h3>{{ data.attributes.title.rendered }}</h3>
+		</div>
+	</a>
 </script>
 	<?php
 }
-
-
-
-/**
-$query_args = [ 'category__in' => $atts['cat'] ];
-
-$template_posts = new \WP_Query( $query_args );
-
-ob_start();
-
-while ( $template_posts->have_posts() ) : $template_posts->the_post();
-
-	get_template_part( 'template-parts/post/content-post', 'thumbnail-preview' );
-
-endwhile; // End of the loop.
-
-$html .= ob_get_clean();
-
-
